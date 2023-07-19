@@ -5,6 +5,6 @@ provider:
 functions:
   simple-openfaas-func:
     lang: go
-    handler: ./simple-openfaas-func
-    image: simple-openfaas-func:latest
+    handler: ./server
+    image: shahriarraka/simple-openfaas-func:latest
 
