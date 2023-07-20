@@ -49,27 +49,32 @@ https://mickey.dev/posts/getting-started-with-openfaas/
 ## build the function for deploying openfaas
 
 1. created a deploy server config file (simple-openfass-func.yml) for openfaas
+
 2. build the function using this command 
    
    ```
    sudo faas-cli new  --lang go server
    ```
+
 3. build the deployment file using this command 
    
    ```
    sudo faas-cli build -f simple-openfaas-func.yml
    ```
+
 4. push the docker image to docker hub using this command 
    
    ```
    sudo faas-cli push -f simple-openfaas-func.yml
    ```
+
 5. login to openfaas using this command 
    
    ```
    export PASSWORD=mysecretpassword 
    echo -n $PASSWORD | faas-cli login --username admin --password-stdin  --gateway 127.0.0.1:31112 
    ```
+
 6. deploy the function using this command 
    
    ```
@@ -78,20 +83,12 @@ https://mickey.dev/posts/getting-started-with-openfaas/
 
 ![](./screenshort/Screenshot%20from%202023-07-20%2010-19-36.png)
 
-
-
 ![](./screenshort/Screenshot%20from%202023-07-20%2010-20-13.png)
 
 ![](./screenshort/Screenshot%20from%202023-07-20%2010-20-30.png)
 
 ![](./screenshort/Screenshot%20from%202023-07-20%2010-21-25.png)
 
-
-
 ![](./screenshort/Screenshot%20from%202023-07-20%2010-21-48.png)
 
-
-
 ![](./screenshort/Screenshot%202023-07-20%20at%2010-18-20%20OpenFaaS%20Portal.png)
-
-
