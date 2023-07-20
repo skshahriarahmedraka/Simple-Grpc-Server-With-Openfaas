@@ -50,7 +50,7 @@ import (
 
 
 func main() {
-	conn, err := grpc.Dial(":50051", grpc.WithInsecure(), grpc.WithBlock())
+	conn, err := grpc.Dial("127.0.0.1:31112", grpc.WithInsecure(), grpc.WithBlock())
 	logs.Error("Error in connecting", err)
 	defer conn.Close()
 	//fmt.Printf("%T",conn)

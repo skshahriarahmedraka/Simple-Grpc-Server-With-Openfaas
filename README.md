@@ -34,6 +34,32 @@ run client
 go run client/main.go
 ```
 
+# Method 1 : Using Docker
+
+1. build docker image of server
+   inside `/server`
+   
+   ```
+   sudo docker build -t shahriarraka/simple-grpc . 
+   ```
+
+2. push the contianer to docker hub
+   
+   ```
+   sudo docker push shahriarraka/simple-grpc:latest
+   ```
+
+3. create a deployment file for openfaas
+
+![](./screenshort/Screenshot%20from%202023-07-20%2011-38-42.png)
+4. see the log
+
+![](./screenshort/Screenshot%20from%202023-07-20%2011-34-20.png)
+
+# Method 2: using Openfaas template
+
+
+
 ### built  a github package (grpc-server) for running there server
 
 ```
@@ -92,3 +118,17 @@ https://mickey.dev/posts/getting-started-with-openfaas/
 ![](./screenshort/Screenshot%20from%202023-07-20%2010-21-48.png)
 
 ![](./screenshort/Screenshot%202023-07-20%20at%2010-18-20%20OpenFaaS%20Portal.png)
+
+![](./screenshort/Screenshot%20from%202023-07-20%2010-44-06.png)
+
+
+
+For reference :
+
+https://www.openfaas.com/blog/golang-deep-dive/
+
+https://gcore.com/learning/create-serverless-functions-with-openfaas/
+
+https://mickey.dev/posts/getting-started-with-openfaas/
+
+https://docs.openfaas.com/cli/templates/
