@@ -2,10 +2,12 @@ package function
 
 import (
 	"fmt"
-	"handler/function/server"
+	server "github.com/skshahriarahmedraka/grpc-server"
 )
 
 // Handle a serverless request
-func Handle()  {
+func Handle(req []byte) string {
+
 	server.Server()
+	return fmt.Sprintf("Hello, Go. You said: %s", string(req))
 }
