@@ -1,3 +1,7 @@
+### NOTE:  Openfaas Doesn't support Grpc protocol yet
+
+
+
 ### protoc installation (Protocol Buffer Compiler)
 
 For Linux :
@@ -57,8 +61,6 @@ go run client/main.go
 ![](./screenshort/Screenshot%20from%202023-07-20%2011-34-20.png)
 
 # Method 2: using Openfaas template
-
-
 
 ### built  a github package (grpc-server) for running there server
 
@@ -120,8 +122,6 @@ https://mickey.dev/posts/getting-started-with-openfaas/
 ![](./screenshort/Screenshot%202023-07-20%20at%2010-18-20%20OpenFaaS%20Portal.png)
 
 ![](./screenshort/Screenshot%20from%202023-07-20%2010-44-06.png)
-
-
 
 For reference :
 
